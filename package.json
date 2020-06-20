@@ -1,0 +1,57 @@
+{
+  "name": "devkeeper-plugin-core",
+  "version": "1.0.0",
+  "description": "Devkeeper core plugin.",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "files": [
+    "/bin",
+    "/lib/**/!(*.spec|*.test)*.*",
+    "/dist/**/!(*.spec|*.test)*.*",
+    "/@types",
+    "/module-files",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "devkeeper"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/jest": "^26.0.0",
+    "@types/node": "^14.0.11",
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
+    "commitizen": "^4.1.2",
+    "concat-md": "^0.3.5",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.13.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "lint-staged": "^10.2.9",
+    "prettier": "^2.0.5",
+    "readmeasy": "^0.2.3",
+    "spdx-license-list": "^6.2.0",
+    "tmp-promise": "^3.0.2",
+    "ts-jest": "^26.1.0",
+    "tslib": "^2.0.0",
+    "typedoc": "^0.17.7",
+    "typedoc-neo-theme": "^1.0.8",
+    "typedoc-plugin-example-tag": "^1.0.2",
+    "typedoc-plugin-markdown": "^2.3.1",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "@types/tmp": "^0.2.0",
+    "@types/yargs": "^15.0.5",
+    "intermodular": "^0.27.0"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "keywords": [],
+  "engines": {
+    "node": ">=10.8.0"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/bin",
+    "/lib/**/!(*.spec|*.test)*.*",
+    "/dist/**/!(*.spec|*.test)*.*",
+    "/@types",
+    "/module-files",
+    "LICENSE"
+  ],
+  "homepage": "https: //github.com/ozum/{{ targetModule.nameWithoutUser }}",
+  "bugs": "https: //github.com/ozum/{{ targetModule.nameWithoutUser }}/issues",
+  "repository": "github:ozum/{{ targetModule.nameWithoutUser }}",
+  "author": {
+    "name": "Özüm Eldoğan"
+  },
+  "license": "",
+  "scripts": {
+    "test": "devkeeper test",
+    "lint": "devkeeper lint",
+    "format": "devkeeper format",
+    "readme": "devkeeper readme",
+    "file:watch": "ts-node-dev --no-notify --respawn --transpileOnly --compiler-options '{ \"module\": \"commonjs\" }'",
+    "release": "devkeeper release"
+  }
+}
